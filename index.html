@@ -14,11 +14,16 @@
   </head>
   <body>
     <div class="contact-container">
-      <form action="" class="contact-left">
+      <form method="POST" id="form" class="contact-left">
         <div class="contact-left-title">
           <h2>Get in Touch</h2>
           <hr />
         </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="07731ad3-cd86-4063-9739-f26ee1bfc749" />
+
         <input
           type="text"
           name="name"
@@ -39,6 +44,7 @@
         <button type="submit">
           Submit <i class="fa-solid fa-arrow-right"></i>
         </button>
+        <div id="result"></div>
       </form>
       <div class="contact-right">
         <img src="asset.svg" alt="Visual" />
