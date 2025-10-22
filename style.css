@@ -125,6 +125,33 @@ input:hover {
   width: 500px;
 }
 
+#result {
+  display: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#result.success {
+  background-color: #d1f7c4;
+  color: #1a7a1a;
+  border: 1px solid #1a7a1a;
+}
+
+#result.error {
+  background-color: #ffd5d5;
+  color: #b30000;
+  border: 1px solid #b30000;
+}
+
+#result.waiting {
+  background-color: #e7f0ff;
+  color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
 @media (max-width: 800px) {
   .contact-inputs {
     width: 80vw;
