@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="contact-container">
+      <form action="" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in Touch</h2>
+          <hr />
+        </div>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your Name"
+          class="contact-inputs"
+          required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          class="contact-inputs"
+          required />
+        <textarea
+          name="message"
+          placeholder="Enter Your Message"
+          class="contact-inputs"
+          required></textarea>
+        <button type="submit">
+          Submit <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+      <div class="contact-right">
+        <img src="assets.svg" alt="Visual" />
+      </div>
+    </div>
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
