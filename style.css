@@ -1,0 +1,135 @@
+/* BASIC RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #ffedd8, #ffffff);
+  font-family: "Outfit", sans-serif;
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #87458f;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 98%;
+  height: 5px;
+  background-color: #87458f;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 3rem;
+  caret-color: #87458f;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+  resize: none;
+}
+
+.contact-inputs:focus {
+  border: 2px solid #87458f;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.contact-inputs {
+  border: 1px solid #b96ac2;
+}
+
+.contact-inputs:hover {
+  border: 1px solid #ef9df8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input:hover {
+  border: 1px solid #ef9df8;
+  transform: translateY(-2px);
+}
+
+.contact-inputs::placeholder {
+  color: #a9a9a9;
+}
+
+.contact-left button {
+  background-color: #ef9df8;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  gap: 10px;
+  border: none;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.contact-left button:hover {
+  background-color: #e47cf0;
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-left button:hover i {
+  transform: translateX(4px);
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-left button:active i {
+  transform: translateX(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-left button:active {
+  background-color: #b96ac2;
+  transform: translateY(0) scale(0.98);
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-right img {
+  width: 500px;
+}
+
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+  .contact-right {
+    display: none;
+  }
+}
